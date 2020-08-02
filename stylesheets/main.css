@@ -5,10 +5,10 @@
 }
 
 
-
 body {
   /* background: var(--primary); */
-  color: var(--light);
+  color: var(--dark);
+  box-sizing: border-box;
 }
 
 
@@ -21,7 +21,7 @@ body {
   background-size: 550px 200px;
   background-image: url("illustrations/4.svg");
   /* background-attachment: fixed; */
-  background-position: right;
+  background-position: 99% 50%;
   font-family: "Muli", "B612", serif;
 
 }
@@ -153,45 +153,109 @@ section .hero-text {
 
 /* ================================ */
 
+.container1 {
+  width: 80%;
+  margin: 0 auto;
+}
 
-.columns-2 {
+.first {
   display: flex;
-  background: #222eee;
   margin-top: 100px;
+  /* background: var(--primary); */
+  color: var(--dark);
 }
 
 
-.heading1 h2 {
+body h2 {
   color: var(--primary);
   margin-top: 50px;
   text-align: center;
   /* border: 1px solid var(--primary); */
 }
 
-.heading1 h2:after {
+body h2:after {
   content: "";
   display: block;
-  width: 400px;
+  width: 300px;
   border: 1px solid var(--dark);
   margin: 0 auto;
-
-
-
-
 }
-
-
 
 .col-6:first-child {
-  background-color: #000;
+  /* background-color: #09521b3f; */
+  width: 40%;
+  /* background: url("illustrations/3.svg"); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
+}
+
+.col-6:first-child img {
+  width: 100%;
+  /* height: 50; */
+
+}
+
+.col-right {
+  margin-top: 300px;
+  width: 60%;
+  /* background-color: #007f5f; */
+}
+
+
+.col-left p {
+  margin: 10px;
+  text-align: center;
+  /* display: inline-block; */
+  /* line-height: 0px; */
+}
+
+.col-left i {
+  color: var(--primary);
+  /* padding: 5px; */
+  margin-right: 20px;
+  display: inline-block;
 }
 
 
 
+.second {
+  margin-top: 20px;
+  display: flex;
+}
+
+.col-left {
+  margin-top: 100px;
+  width: 60%;
+  /* background-color: #007f5f; */
+}
+.col-img-right {
+  margin-top: 100px;
+  width: 40%;
+  /* background-color: #007f5f; */
+}
 
 
+.col-img-right img {
+  width: 100%;
+  /* margin-top: 20px; */
 
+}
+
+.col-6 p {
+  margin: 10px;
+  text-align: center;
+  /* display: inline-block; */
+  /* line-height: 0px; */
+}
+
+.col-6 i {
+  color: var(--primary);
+  /* padding: 5px; */
+  margin-right: 20px;
+  display: inline-block;
+}
 
 
 
